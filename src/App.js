@@ -25,7 +25,7 @@ function App() {
     formData.append('image', imageFile);
 
     try {
-      const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('https://9c1f-2a02-587-b80f-ea02-34a7-d9cc-1fc1-a782.ngrok-free.app/upload', {
         method: 'POST',
         body: formData,
       });
