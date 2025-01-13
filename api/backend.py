@@ -58,4 +58,4 @@ def upload_image():
     return jsonify({'image': img_base64, 'predictions': prediction.json()['predictions']})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=9001)
+    app.run(debug=True, port=900)
