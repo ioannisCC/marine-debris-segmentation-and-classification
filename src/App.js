@@ -25,7 +25,7 @@ function App() {
     formData.append('image', imageFile);
 
     try {
-      const response = await fetch('https://marine-debris-segmentation-and-classification-kq9q.vercel.app/upload', {
+      const response = await fetch('https://bf32-2a02-587-b818-1ddf-bd27-27dd-f726-9ef0.ngrok-free.app/upload', {
         method: 'POST',
         body: formData,
       });
