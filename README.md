@@ -1,6 +1,7 @@
 # Marine Debris Classifier  
 
 This repository contains a React web app designed to classify and segment marine debris using Roboflow's inference engine. The project highlights a modular, scalable approach to AI-powered object detection and citizen science, targeting the critical issue of ocean pollution.  
+Access the website here: https://new-one-eight-pearl.vercel.app
 
 ---
 
