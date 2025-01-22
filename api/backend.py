@@ -14,6 +14,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Initialize Roboflow
+# https://universe.roboflow.com/reconhecimentoimgs/global-solution (current model)
 rf = roboflow.Roboflow(api_key="vOyxQX3E63fUN18WAkq9")
 project = rf.workspace().project("global-solution")
 model = project.version("4").model
