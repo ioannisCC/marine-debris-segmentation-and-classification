@@ -1,18 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #000;
+}
+
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #000; /* Black background for the app */
+  color: #fff; /* White text color for contrast */
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000; /* Match the app background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff; /* White text color */
 }
 
 input[type="file"] {
@@ -27,9 +35,9 @@ button, .custom-file-upload {
   margin-top: 50px;
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
-  background: linear-gradient(45deg, #4caf50, #81c784);
-  border: none;
+  color: #000; /* Black text color */
+  background: #fff; /* White background for contrast */
+  border: 1px solid #000; /* Black border for clarity */
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
@@ -37,12 +45,14 @@ button, .custom-file-upload {
 }
 
 button:hover, .custom-file-upload:hover {
-  background: linear-gradient(45deg, #388e3c, #66bb6a);
+  background: #ccc; /* Light gray for hover effect */
+  color: #000; /* Ensure text remains visible */
   transform: translateY(-2px);
 }
 
 button:disabled {
-  background: #cccccc;
+  background: #333; /* Dark gray for disabled state */
+  color: #aaa; /* Light gray text */
   cursor: not-allowed;
 }
 
@@ -55,64 +65,66 @@ button:active, .custom-file-upload:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Reduced for better smartphone view */
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .table-container {
-  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-x: auto;
   margin: 20px auto;
-  width: 100%; /* Ensure it doesn't exceed the screen width */
+  width: 100%;
 }
 
 img {
   max-width: 100%;
-  max-height: 50vh; /* Adjust for smaller screens */
+  max-height: 50vh;
+  border: 2px solid #fff; /* Add a white border around images */
 }
 
-/* Styling for the table */
 table {
-  width: 90%; /* Reduced width for better fit on small screens */
+  width: 90%;
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  font-size: 14px; /* Adjusted font size for smaller screens */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+  font-size: 14px;
+  background-color: #000; /* Black table background */
+  color: #fff; /* White text color */
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 10px 15px; /* Adjusted padding for smaller screens */
+  border: 1px solid #fff; /* White borders */
+  padding: 10px 15px;
 }
 
 th {
-  background-color: #4caf50;
-  color: white;
+  background-color: #333; /* Dark gray for header */
+  color: #fff; /* White text color */
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #222; /* Slightly lighter black for even rows */
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #444; /* Dark gray for hover effect */
 }
 
 table + div {
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 @media (max-width: 480px) {
   .App-header {
-    font-size: calc(6px + 2vmin); /* Further reduced font size */
-    padding: 10px; /* Adjusted padding */
+    font-size: calc(6px + 2vmin);
+    padding: 10px;
   }
 
   button, .custom-file-upload {
     font-size: 12px;
     padding: 6px 10px;
-    margin: 5px; /* Reduced margins */
+    margin: 5px;
   }
 
   .image-container {
@@ -122,7 +134,7 @@ table + div {
 
   table {
     width: 100%;
-    font-size: 10px; /* Smaller table text */
+    font-size: 10px;
   }
 
   th, td {
