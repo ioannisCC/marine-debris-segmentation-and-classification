@@ -55,27 +55,28 @@ button:active, .custom-file-upload:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px; /* Added margin-top to create space between image and button */
-  margin-bottom: 100px; /* Added margin-bottom for spacing between image and table */
+  margin-top: 50px; /* Reduced for better smartphone view */
+  margin-bottom: 50px;
 }
 
 img {
   max-width: 100%;
-  max-height: 60vh;  /* Adjust height so it doesn't take up too much space */
+  max-height: 50vh; /* Adjust for smaller screens */
 }
 
 /* Styling for the table */
 table {
-  width: 80%;
+  width: 90%; /* Reduced width for better fit on small screens */
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for better visibility */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px; /* Adjusted font size for smaller screens */
 }
 
 th, td {
   border: 1px solid #ddd;
-  padding: 12px 20px; /* Increased padding for better readability */
+  padding: 10px 15px; /* Adjusted padding for smaller screens */
 }
 
 th {
@@ -94,4 +95,55 @@ tr:hover {
 
 table + div {
   margin-top: 20px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin); /* Reduced font size */
+    padding: 10px; /* Adjusted padding */
+  }
+
+  button, .custom-file-upload {
+    font-size: 14px; /* Smaller button size */
+    padding: 8px 15px;
+    margin: 5px; /* Reduced margins */
+  }
+
+  .image-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%; /* Use full width on smaller screens */
+    font-size: 12px; /* Smaller text for tables */
+  }
+
+  th, td {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(6px + 2vmin); /* Further reduced font size */
+  }
+
+  button, .custom-file-upload {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  img {
+    max-height: 40vh; /* Adjust image height for very small screens */
+  }
+
+  table {
+    font-size: 10px; /* Smaller table text */
+  }
+
+  th, td {
+    padding: 5px 8px;
+  }
 }
