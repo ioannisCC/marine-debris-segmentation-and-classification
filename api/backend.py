@@ -13,9 +13,11 @@ matplotlib.use('Agg')
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
+ROBOFLOW_API_KEY = os.getenv("ROBOFLOW_API_KEY")
+
 # Initialize Roboflow
 # https://universe.roboflow.com/reconhecimentoimgs/global-solution (current model)
-rf = roboflow.Roboflow(api_key="vOyxQX3E63fUN18WAkq9")
+rf = roboflow.Roboflow(api_key=ROBOFLOW_API_KEY)
 project = rf.workspace().project("global-solution")
 model = project.version("4").model
 
