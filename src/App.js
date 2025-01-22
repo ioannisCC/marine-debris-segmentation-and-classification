@@ -25,7 +25,7 @@ function App() {
     formData.append('image', imageFile);
 
     try {
-      const response = await fetch('https://5fb3-2a02-587-b805-6f1f-2580-9470-778c-791b.ngrok-free.app/upload', {
+      const response = await fetch('https://marine-debris-classification-f06515714383.herokuapp.com/upload', {
         method: 'POST',
         body: formData,
       });

@@ -22,7 +22,7 @@ model = project.version("4").model
 def upload_image():
     # Get the uploaded image file
     file = request.files['image']
-    file_path = os.path.join('uploads', file.filename)
+    file_path = os.path.join('upload', file.filename)
     file.save(file_path)
 
     # Predict on the uploaded image using the Roboflow model

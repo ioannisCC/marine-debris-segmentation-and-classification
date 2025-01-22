@@ -1,6 +1,0 @@
-Flask
-flask-cors
-roboflow
-Pillow
-matplotlib
-base64

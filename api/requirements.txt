@@ -1,0 +1,6 @@
+Flask
+flask-cors
+roboflow
+Pillow
+matplotlib
+gunicorn
