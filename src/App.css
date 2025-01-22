@@ -103,16 +103,15 @@ table + div {
   margin-top: 20px; 
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .App-header {
-    font-size: calc(8px + 2vmin); /* Reduced font size */
+    font-size: calc(6px + 2vmin); /* Further reduced font size */
     padding: 10px; /* Adjusted padding */
   }
 
   button, .custom-file-upload {
-    font-size: 14px; /* Smaller button size */
-    padding: 8px 15px;
+    font-size: 12px;
+    padding: 6px 10px;
     margin: 5px; /* Reduced margins */
   }
 
@@ -122,30 +121,7 @@ table + div {
   }
 
   table {
-    width: 100%; /* Use full width on smaller screens */
-    font-size: 12px; /* Smaller text for tables */
-  }
-
-  th, td {
-    padding: 8px 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .App-header {
-    font-size: calc(6px + 2vmin); /* Further reduced font size */
-  }
-
-  button, .custom-file-upload {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-
-  img {
-    max-height: 40vh; /* Adjust image height for very small screens */
-  }
-
-  table {
+    width: 100%;
     font-size: 10px; /* Smaller table text */
   }
 
