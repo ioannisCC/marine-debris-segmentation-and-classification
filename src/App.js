@@ -73,34 +73,37 @@ function App() {
       </div>
 
       {predictions && (
-        <div>
-          <h2>Predictions</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Confidence (%)</th>
-                <th>X</th>
-                <th>Y</th>
-                <th>Width</th>
-                <th>Height</th>
-              </tr>
-            </thead>
-            <tbody>
-              {predictions.map((prediction, index) => (
-                <tr key={index}>
-                  <td>{prediction.class}</td>
-                  <td>{(prediction.confidence * 100).toFixed(2)}</td>
-                  <td>{prediction.x}</td>
-                  <td>{prediction.y}</td>
-                  <td>{prediction.width}</td>
-                  <td>{prediction.height}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+  <div>
+    <h2>Predictions</h2>
+    <div className="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Confidence (%)</th>
+            <th>X</th>
+            <th>Y</th>
+            <th>Width</th>
+            <th>Height</th>
+          </tr>
+        </thead>
+        <tbody>
+          {predictions.map((prediction, index) => (
+            <tr key={index}>
+              <td>{prediction.class}</td>
+              <td>{(prediction.confidence * 100).toFixed(2)}</td>
+              <td>{prediction.x}</td>
+              <td>{prediction.y}</td>
+              <td>{prediction.width}</td>
+              <td>{prediction.height}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+)}
+
     </div>
   );
 }
