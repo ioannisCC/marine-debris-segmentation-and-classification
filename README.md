@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Marine Debris Classifier  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a React web app designed to classify and segment marine debris using Roboflow's inference engine. The project highlights a modular, scalable approach to AI-powered object detection and citizen science, targeting the critical issue of ocean pollution.  
+Access the website here: https://new-one-eight-pearl.vercel.app
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Technical Highlights  
 
-### `npm start`
+### Frontend  
+- **Framework**: Built with React for a modern and responsive UI.  
+- **Deployment**: Hosted on **Vercel** for fast and reliable access.  
+- **Features**:  
+  - File upload interface for debris image classification.  
+  - Real-time interaction with the backend for inference.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend  
+- **Framework**: Developed with **Flask**, providing lightweight and efficient API endpoints.  
+- **Deployment**: Hosted on **Heroku** to ensure scalability and accessibility.  
+- **Integration**:  
+  - Communicates seamlessly with the frontend and the inference engine.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Inference Engine  
+- **Powered By**: **Roboflow's API** for object detection and segmentation.  
+- **Dockerized**: Runs in a Docker container for modularity and platform independence.  
+- **Supported Classes**:  
+  1. Fishing net  
+  2. Aluminum can  
+  3. Bottle  
+  4. Plastic bag  
+  5. Plastic waste  
+  6. Tire  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features  
 
-### `npm run build`
+### Dockerized Design  
+- The inference engine operates in a Docker container, ensuring platform independence and simplifying deployment.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Extensibility  
+- Easily swap or update models to incorporate new debris classes or refine current detection capabilities.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Citizen Science Integration  
+- Empowers users to contribute by uploading photos for debris classification, fostering community involvement in ocean health.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Deployment  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend  
+- Hosted on **Vercel**.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend  
+- Flask API hosted on **Heroku**.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Inference Engine  
+- Docker container running Roboflow's API for classification and segmentation.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Usage  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**:  
+   ```bash
+   git clone https://github.com/yourusername/marine-debris-classifier.git
+   cd marine-debris-classifier
