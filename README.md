@@ -3,9 +3,9 @@ Marine Debris Classifier
 This repository contains a React web app designed for classifying and segmenting marine debris using Roboflow’s inference engine. The project demonstrates a modular, scalable approach to AI-powered object detection and citizen science, targeting the issue of ocean pollution.
 
 Technical Highlights:
-	•	Frontend:
-	•	Built with React for a modern and responsive UI.
-	•	Deployed on Vercel for fast and reliable hosting.
+Frontend:
+	Built with React for a modern and responsive UI.
+	Deployed on Vercel for fast and reliable hosting.
 	•	File upload interface for debris image classification.
 	•	Backend:
 	•	Developed with Flask, providing a lightweight and efficient API for communication with the frontend.
