@@ -1,26 +1,26 @@
 html, body {
   height: 100%;
   margin: 0;
-  background-color: #000;
+  background-color: #0d47a1; /* Brighter intense blue */
 }
 
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #000; /* Black background for the app */
-  color: #fff; /* White text color for contrast */
+  background-color: #0d47a1; /* Match the background */
+  color: #fff9e6; /* Light cream text inspired by the turtle */
 }
 
 .App-header {
-  background-color: #000; /* Match the app background */
+  background-color: #0d47a1; /* Match the app background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #fff; /* White text color */
+  color: #fff9e6; /* Cream text */
 }
 
 input[type="file"] {
@@ -35,9 +35,9 @@ button, .custom-file-upload {
   margin-top: 50px;
   font-size: 16px;
   font-weight: bold;
-  color: #000; /* Black text color */
-  background: #fff; /* White background for contrast */
-  border: 1px solid #000; /* Black border for clarity */
+  color: #0d47a1; /* Bright intense blue text */
+  background: #fff; /* White background */
+  border: 1px solid #0d47a1; /* Bright intense blue border */
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
@@ -45,14 +45,14 @@ button, .custom-file-upload {
 }
 
 button:hover, .custom-file-upload:hover {
-  background: #ccc; /* Light gray for hover effect */
-  color: #000; /* Ensure text remains visible */
+  background: #e6e6e6; /* Light gray for hover */
+  color: #0d47a1; /* Ensure text remains visible */
   transform: translateY(-2px);
 }
 
 button:disabled {
-  background: #333; /* Dark gray for disabled state */
-  color: #aaa; /* Light gray text */
+  background: #594a3f; /* Muted brown for disabled state */
+  color: #fff9e6; /* Light cream text */
   cursor: not-allowed;
 }
 
@@ -78,7 +78,7 @@ button:active, .custom-file-upload:active {
 img {
   max-width: 100%;
   max-height: 50vh;
-  border: 2px solid #fff; /* Add a white border around images */
+  border: 2px solid #fff9e6; /* Light cream border */
 }
 
 table {
@@ -86,29 +86,29 @@ table {
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+  box-shadow: 0px 0px 10px rgba(255, 249, 230, 0.2); /* Subtle cream shadow */
   font-size: 14px;
-  background-color: #000; /* Black table background */
-  color: #fff; /* White text color */
+  background-color: #0d47a1; /* Bright intense blue table background */
+  color: #fff9e6; /* Light cream text */
 }
 
 th, td {
-  border: 1px solid #fff; /* White borders */
+  border: 1px solid #fff9e6; /* Cream borders */
   padding: 10px 15px;
 }
 
 th {
-  background-color: #333; /* Dark gray for header */
-  color: #fff; /* White text color */
+  background-color: #1976d2; /* Lighter brighter blue for header */
+  color: #fff9e6; /* Light cream text */
   font-weight: bold;
 }
 
 tr:nth-child(even) {
-  background-color: #222; /* Slightly lighter black for even rows */
+  background-color: #1565c0; /* Vibrant blue for even rows */
 }
 
 tr:hover {
-  background-color: #444; /* Dark gray for hover effect */
+  background-color: #2196f3; /* Even brighter blue for hover effect */
 }
 
 table + div {
